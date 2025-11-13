@@ -1,0 +1,29 @@
+body {
+  transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background: #222;
+  color: #f1f1f1;
+}
+li.completed {
+  text-decoration: line-through;
+  background-color: #c3fac3 !important;
+  color: #666 !important;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-details {
+  flex: 1;
+}
+.priority-High { color: red; font-weight: bold; }
+.priority-Medium { color: orange; }
+.priority-Low { color: green; }
+.category-Personal { font-style: italic; }
+.category-Work { text-decoration: underline; }
+.category-Other { }
+.btn-edit, .btn-delete {
+  margin-left: 8px;
+}
